@@ -33,7 +33,10 @@ elSiteForm.addEventListener("submit", function (evt) {
   } else if (inputValue > grantEntranceScore && inputValue <= score) {
     elSiteOutput.textContent =
       "Tabriklaymiz siz grant asosida o'qishga qabul qilingiz";
-  } else {
+  }else if (inputValue > score){
+    elSiteOutput.textContent = "Maksimal ball 189."
+  }
+   else {
     elSiteOutput.textContent =
       "Sizga " +
       (entranceScore - inputValue) +
